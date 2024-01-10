@@ -4,6 +4,7 @@ import ch.oliumbi.compass.core.annotations.Autoload;
 import ch.oliumbi.compass.server.request.Request;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.unclet.UncleT;
+import ch.oliumbi.unclet.components.article.Article;
 import ch.oliumbi.unclet.components.section.Section;
 import ch.oliumbi.unclet.components.typography.H1;
 import ch.oliumbi.unclet.components.typography.H3;
@@ -19,7 +20,7 @@ public class Privacy extends UncleT {
         new Section(
             new H1("Datenschutz")
         ),
-        new Section(
+        new Article(
             new Policy(
                 "Allgemeine Informationen",
                 "Die Betreiber dieser Website nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich.",
@@ -50,6 +51,14 @@ public class Privacy extends UncleT {
             new Policy(
                 "Google Maps",
                 "Diese Webseite verwendet unter Umständen das Produkt Google Maps von Google Inc. Durch Nutzung dieser Webseite erklären Sie sich mit der Erfassung, Bearbeitung sowie Nutzung der automatisiert erhobenen Daten durch Google Inc, deren Vertreter sowie Dritter einverstanden. Die Nutzungsbedingungen von Google Maps finden sie unter «Nutzungsbedingungen von Google Maps»."
+            ),
+            new Policy(
+                "Kontaktformular",
+                "Insofern die Webseite ein Kontaktformular zur Verfügung stellt und wenn Sie uns über dieses Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter und werden vertraulich behandelt."
+            ),
+            new Policy(
+                "Auskunft, Löschung und Sperrung",
+                "Sie erhalten Auskunft über die von uns gespeicherten personenbezogenen Daten zu Ihrer Person sowie zur Herkunft, dem Empfänger und dem Zweck von Datenerhebung sowie Datenverarbeitung. Außerdem haben Sie das Recht, die Berichtigung, die Sperrung oder Löschung Ihrer Daten zu verlangen. Ausgenommen davon sind Daten, die aufgrund gesetzlicher Vorschriften aufbewahrt oder zur ordnungsgemäßen Geschäftsabwicklung benötigt werden. Damit eine Datensperre jederzeit realisiert werden kann, können Daten gegebenenfalls zu Kontrollzwecken in einer Sperrdatei vorgehalten werden. Werden Daten nicht von einer gesetzlichen Archivierungspflicht erfasst, löschen wir Ihre Daten auf Ihren Wunsch. Greift die Archivierungspflicht, sperren wir Ihre Daten. Für alle Fragen und Anliegen zur Berichtigung, Sperrung oder Löschung von personenbezogenen Daten wenden Sie sich bitte an unseren Datenschutzbeauftragten oder an die im Impressum genannte Adresse."
             )
         )
     );

@@ -2,6 +2,7 @@ package ch.oliumbi.unclet.pages.privacy;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.typography.H4;
 import ch.oliumbi.unclet.components.typography.P;

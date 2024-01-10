@@ -2,22 +2,15 @@ package ch.oliumbi.unclet.components.typography;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
 
 public class H1 extends Component {
 
   private final String value;
-  private final String color;
 
   public H1(String value) {
     this.value = value;
-    this.color = Theme.blackDark();
-  }
-
-  public H1(String value, String color) {
-    this.value = value;
-    this.color = color;
   }
 
   @Override
@@ -35,7 +28,6 @@ public class H1 extends Component {
     return new State()
         .normal(new Style()
             .fontFamily("geist")
-            .fontColor(color)
             .fontWeight("800")
             .fontSize("4.5rem")
             .fontHeight("4.95rem"));

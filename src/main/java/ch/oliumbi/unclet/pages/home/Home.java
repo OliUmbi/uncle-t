@@ -1,10 +1,14 @@
 package ch.oliumbi.unclet.pages.home;
 
 import ch.oliumbi.compass.core.annotations.Autoload;
+import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.server.request.Request;
 import ch.oliumbi.compass.ui.component.Component;
+import ch.oliumbi.compass.ui.image.Image;
 import ch.oliumbi.unclet.UncleT;
 import ch.oliumbi.unclet.components.button.Button;
+import ch.oliumbi.unclet.components.image.Img;
+import ch.oliumbi.unclet.components.image.Picture;
 import ch.oliumbi.unclet.components.section.Section;
 import ch.oliumbi.unclet.components.typography.H1;
 import ch.oliumbi.unclet.components.typography.H2;
@@ -21,8 +25,10 @@ public class Home extends UncleT {
   protected List<Component> load(Request request) {
     return List.of(
         new Section(
-            new H1("Uncle-T")
+            new Img("/static/svg/logo.svg", "Logo Uncle-T", 1483, 512),
+            new P("Mein Name ist Thomas Habegger und ich arbeite seit 13 Jahren leidenschaftlich gerne als Koch. Die Kunden und deren Gäste mit meinen Kochkünsten zu verzaubern bereitet mir grosse Freude. ")
         ),
+        new Personal(),
         new Section(
             new Button("Hello, World!"),
             new H1("Lorem ipsum"),

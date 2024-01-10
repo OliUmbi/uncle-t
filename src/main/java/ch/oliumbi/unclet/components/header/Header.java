@@ -2,6 +2,7 @@ package ch.oliumbi.unclet.components.header;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.navigation.Navigation;
 import java.util.List;

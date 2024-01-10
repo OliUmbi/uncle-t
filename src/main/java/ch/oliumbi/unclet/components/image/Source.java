@@ -3,7 +3,7 @@ package ch.oliumbi.unclet.components.image;
 import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import java.util.List;
 
 public class Source extends Component {
@@ -26,10 +26,10 @@ public class Source extends Component {
 
     return List.of(
         new Attribute("sizes", STR."""
-            (max-width: \{Theme.xs()}) 1px,
-            (max-width: \{Theme.s()}) 2px,
-            (max-width: \{Theme.m()}) 3px,
-            (max-width: \{Theme.l()}) 4px,
+            (max-width: \{Global.xs()}) 1px,
+            (max-width: \{Global.s()}) 2px,
+            (max-width: \{Global.m()}) 3px,
+            (max-width: \{Global.l()}) 4px,
             5px
             """),
         new Attribute("srcset", STR."""

@@ -4,7 +4,7 @@ import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.script.Script;
 import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import java.util.List;
 
 public class Drawer extends Component {
@@ -40,11 +40,12 @@ public class Drawer extends Component {
     return new State()
         .normal(new Style()
             .position("fixed")
+            .elevation("99")
             .top("0")
             .right("-100%")
             .width("40rem")
             .height("100%")
-            .background(Theme.white())
+            .background(Global.white())
             .padding("4rem")
             .flex("column", "nowrap", "space-between", "flex-end", "0"));
   }

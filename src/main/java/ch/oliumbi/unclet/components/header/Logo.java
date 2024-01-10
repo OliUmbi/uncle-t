@@ -1,6 +1,7 @@
 package ch.oliumbi.unclet.components.header;
 
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.image.Img;
 
@@ -16,5 +17,12 @@ public class Logo extends Img {
         .normal(new Style()
             .width("auto")
             .height("4rem"));
+  }
+
+  @Override
+  protected State xs() {
+    return new State()
+        .normal(new Style()
+            .height("3rem"));
   }
 }

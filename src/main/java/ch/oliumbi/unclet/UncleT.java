@@ -47,17 +47,17 @@ public abstract class UncleT extends Ui implements Route {
 
   @Override
   protected String theme() {
-    return Theme.primary();
+    return Global.primary();
   }
 
   @Override
   protected String foreground() {
-    return Theme.blackDark();
+    return Global.blackDark();
   }
 
   @Override
   protected String background() {
-    return Theme.whiteLight();
+    return Global.whiteLight();
   }
 
   @Override

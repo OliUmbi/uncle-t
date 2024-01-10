@@ -2,9 +2,8 @@ package ch.oliumbi.unclet.pages.terms;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
-import ch.oliumbi.unclet.components.typography.H3;
 import java.util.List;
 
 public class Term extends Component {
@@ -25,7 +24,7 @@ public class Term extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new H3(number, Theme.blackLight()),
+        new Number(number),
         new Condition(conditions)
     );
   }

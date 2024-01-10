@@ -1,6 +1,6 @@
 package ch.oliumbi.unclet;
 
-public class Theme {
+public class Global {
 
   public static String whiteLight() {
     return "#FFFFFF";

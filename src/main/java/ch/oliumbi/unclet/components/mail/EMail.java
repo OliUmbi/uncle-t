@@ -4,7 +4,7 @@ import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import java.util.List;
 
 public class EMail extends Component {
@@ -38,15 +38,15 @@ public class EMail extends Component {
         .normal(new Style()
             .display("inline-block")
             .padding("1rem 2rem")
-            .background(Theme.primary())
-            .fontColor(Theme.whiteLight())
+            .background(Global.primary())
+            .fontColor(Global.whiteLight())
             .fontWeight("600")
             .fontDecoration("none"))
         .hover(new Style()
-            .background(Theme.primaryLight()))
+            .background(Global.primaryLight()))
         .action(new Style()
-            .background(Theme.primaryDark()))
+            .background(Global.primaryDark()))
         .focus(new Style()
-            .background(Theme.outline()));
+            .background(Global.outline()));
   }
 }

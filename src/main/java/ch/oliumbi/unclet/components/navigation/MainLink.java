@@ -4,7 +4,7 @@ import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import ch.oliumbi.unclet.components.typography.H1;
 import java.util.List;
 
@@ -42,9 +42,9 @@ public class MainLink extends Component {
     return new State()
         .normal(new Style()
             .width("100%")
-            .fontColor(Theme.blackDark())
+            .fontColor(Global.blackDark())
             .fontDecoration("none"))
         .hover(new Style()
-            .fontColor(Theme.primary()));
+            .fontColor(Global.primary()));
   }
 }

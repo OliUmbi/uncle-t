@@ -2,8 +2,8 @@ package ch.oliumbi.unclet.pages.terms;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
 import ch.oliumbi.unclet.components.typography.P;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ public class Condition extends Component {
     List<Component> components = new ArrayList<>();
 
     for (String condition : conditions) {
-      components.add(new P(condition, Theme.blackDark()));
+      components.add(new P(condition));
     }
 
     return components;

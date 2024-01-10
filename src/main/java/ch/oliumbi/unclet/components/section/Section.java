@@ -3,7 +3,7 @@ package ch.oliumbi.unclet.components.section;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import java.util.List;
 
 public class Section extends Component {
@@ -29,7 +29,7 @@ public class Section extends Component {
     return new State()
         .normal(new Style()
             .padding("6rem 5rem")
-            .widthMax(Theme.xl())
+            .widthMax(Global.xl())
             .margin("auto"));
   }
 

@@ -26,7 +26,7 @@ public class Picture extends Component {
       components.add(new Source(image.getPath(), image.getType()));
     }
 
-    components.add(new Img(
+    components.add(new Fallback(
         STR."\{fallback.getPath()}-xl\{fallback.getType().extension()}",
         fallback.getDescription(),
         fallback.getWidth(),

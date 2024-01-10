@@ -5,7 +5,7 @@ import ch.oliumbi.compass.ui.script.Script;
 import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.Icons;
-import ch.oliumbi.unclet.Theme;
+import ch.oliumbi.unclet.Global;
 import java.util.List;
 
 public class Control extends Component {
@@ -45,12 +45,12 @@ public class Control extends Component {
         .normal(new Style()
             .padding("0.5rem")
             .border("none")
-            .background(Theme.white()))
+            .background(Global.white()))
         .hover(new Style()
-            .background(Theme.whiteDark()))
+            .background(Global.whiteDark()))
         .focus(new Style()
-            .outline(Theme.outline()))
+            .outline(Global.outline()))
         .action(new Style()
-            .background(Theme.primary()));
+            .background(Global.primary()));
   }
 }
