@@ -1,8 +1,8 @@
 package ch.oliumbi.unclet.pages.legal;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Flex;
+import ch.oliumbi.compass.ui.style.Grid;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.typography.P;
 import java.util.List;
@@ -29,16 +29,16 @@ public class Layout extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .grid("1fr 1fr", "auto", "start", "start", "4rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new Grid("1fr 1fr", "auto", "start", "start", "4rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .grid("1fr", "auto", "start", "start", "4rem"));
+  protected List<Style> m() {
+    return List.of(
+        new Grid("1fr", "auto", "start", "start", "4rem")
+    );
   }
 }

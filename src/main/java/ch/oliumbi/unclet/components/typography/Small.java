@@ -1,9 +1,12 @@
 package ch.oliumbi.unclet.components.typography;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.TextFamily;
+import ch.oliumbi.compass.ui.style.TextHeight;
+import ch.oliumbi.compass.ui.style.TextSize;
+import ch.oliumbi.compass.ui.style.TextWeight;
+import java.util.List;
 
 public class Small extends Component {
 
@@ -24,44 +27,44 @@ public class Small extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .fontFamily("geist")
-            .fontWeight("400")
-            .fontSize("0.875rem")
-            .fontHeight("1.3125rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new TextFamily("\"geist\", sans-serif"),
+        new TextWeight("300"),
+        new TextSize("0.875rem"),
+        new TextHeight("1.3125rem")
+    );
   }
 
   @Override
-  protected State l() {
-    return new State()
-        .normal(new Style()
-            .fontSize("0.8125rem")
-            .fontHeight("1.21875rem"));
+  protected List<Style> l() {
+    return List.of(
+        new TextSize("0.8125rem"),
+        new TextHeight("1.21875rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .fontSize("0.75rem")
-            .fontHeight("1.125rem"));
+  protected List<Style> m() {
+    return List.of(
+        new TextSize("0.75rem"),
+        new TextHeight("1.125rem")
+    );
   }
 
   @Override
-  protected State s() {
-    return new State()
-        .normal(new Style()
-            .fontSize("0.6875rem")
-            .fontHeight("1.03125rem"));
+  protected List<Style> s() {
+    return List.of(
+        new TextSize("0.6875rem"),
+        new TextHeight("1.03125rem")
+    );
   }
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .fontSize("0.625rem")
-            .fontHeight("0.9375rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new TextSize("0.625rem"),
+        new TextHeight("0.9375rem")
+    );
   }
 }

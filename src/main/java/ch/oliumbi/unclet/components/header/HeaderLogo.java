@@ -1,8 +1,10 @@
 package ch.oliumbi.unclet.components.header;
 
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Height;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.Width;
 import ch.oliumbi.unclet.components.image.Image;
+import java.util.List;
 
 public class HeaderLogo extends Image {
 
@@ -11,17 +13,17 @@ public class HeaderLogo extends Image {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .width("auto")
-            .height("4rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new Width("auto"),
+        new Height("4rem")
+    );
   }
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .height("3rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new Height("3rem")
+    );
   }
 }

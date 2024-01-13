@@ -1,9 +1,8 @@
 package ch.oliumbi.unclet.components.navigation;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.Width;
 import java.util.List;
 
 public class SubGroup extends Component {
@@ -24,9 +23,9 @@ public class SubGroup extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .width("100%"));
+  protected List<Style> xl() {
+    return List.of(
+        new Width("100%")
+    );
   }
 }

@@ -2,8 +2,12 @@ package ch.oliumbi.unclet.components.mail;
 
 import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Background;
+import ch.oliumbi.compass.ui.style.Display;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.TextColor;
+import ch.oliumbi.compass.ui.style.TextWeight;
 import ch.oliumbi.unclet.Global;
 import java.util.List;
 
@@ -33,20 +37,34 @@ public class EMail extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .display("inline-block")
-            .padding("1rem 2rem")
-            .background(Global.primary())
-            .fontColor(Global.whiteLight())
-            .fontWeight("600")
-            .fontDecoration("none"))
-        .hover(new Style()
-            .background(Global.primaryLight()))
-        .action(new Style()
-            .background(Global.primaryDark()))
-        .focus(new Style()
-            .background(Global.outline()));
+  protected List<Style> xl() {
+    return List.of(
+        new Display("inline-block"),
+        new Padding("1rem 2rem"),
+        new Background(Global.primary()),
+        new TextColor(Global.whiteLight()),
+        new TextWeight("600")
+    );
+  }
+
+  @Override
+  protected List<Style> xlHover() {
+    return List.of(
+        new Background(Global.primaryLight())
+    );
+  }
+
+  @Override
+  protected List<Style> xlAction() {
+    return List.of(
+        new Background(Global.primaryDark())
+    );
+  }
+
+  @Override
+  protected List<Style> xlFocus() {
+    return List.of(
+        Global.outline()
+    );
   }
 }

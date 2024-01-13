@@ -1,8 +1,7 @@
 package ch.oliumbi.unclet.pages.legal;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Flex;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.typography.H3;
 import java.util.ArrayList;
@@ -34,9 +33,9 @@ public class Element extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .flex("column", "nowrap", "flex-start", "flex-start", "1rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new Flex("column", "nowrap", "flex-start", "flex-start", "1rem")
+    );
   }
 }

@@ -2,8 +2,12 @@ package ch.oliumbi.unclet.components.footer;
 
 import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Background;
+import ch.oliumbi.compass.ui.style.Flex;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.TextColor;
+import ch.oliumbi.compass.ui.style.TextDecoration;
 import ch.oliumbi.unclet.Global;
 import ch.oliumbi.unclet.components.typography.P;
 import java.util.List;
@@ -38,13 +42,16 @@ public class FooterLink extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .padding("0.25rem 1rem")
-            .fontColor(Global.black())
-            .fontDecoration("none"))
-        .hover(new Style()
-            .background(Global.white()));
+  protected List<Style> xl() {
+    return List.of(
+        new Padding("0.25rem 1rem")
+    );
+  }
+
+  @Override
+  protected List<Style> xlHover() {
+    return List.of(
+        new Background(Global.white())
+    );
   }
 }

@@ -1,9 +1,9 @@
 package ch.oliumbi.unclet.pages.terms;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Flex;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.TextAlign;
 import ch.oliumbi.unclet.components.typography.P;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,18 +34,19 @@ public class Condition extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .flex("column", "nowrap", "flex-start", "center", "1rem")
-            .fontAlign("center"));
+  protected List<Style> xl() {
+    return List.of(
+        new TextAlign("center"),
+        new Flex("column", "nowrap", "flex-start", "center", "1rem")
+    );
   }
 
+
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .flex("column", "nowrap", "flex-start", "flex-start", "1rem")
-            .fontAlign("left"));
+  protected List<Style> xs() {
+    return List.of(
+        new TextAlign("left"),
+        new Flex("column", "nowrap", "flex-start", "flex-start", "1rem")
+    );
   }
 }

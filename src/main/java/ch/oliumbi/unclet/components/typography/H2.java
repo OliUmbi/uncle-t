@@ -1,9 +1,12 @@
 package ch.oliumbi.unclet.components.typography;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.TextFamily;
+import ch.oliumbi.compass.ui.style.TextHeight;
+import ch.oliumbi.compass.ui.style.TextSize;
+import ch.oliumbi.compass.ui.style.TextWeight;
+import java.util.List;
 
 public class H2 extends Component {
 
@@ -24,44 +27,44 @@ public class H2 extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .fontFamily("geist")
-            .fontWeight("700")
-            .fontSize("4rem")
-            .fontHeight("4.8rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new TextFamily("\"geist\", sans-serif"),
+        new TextWeight("700"),
+        new TextSize("4rem"),
+        new TextHeight("4.8rem")
+    );
   }
 
   @Override
-  protected State l() {
-    return new State()
-        .normal(new Style()
-            .fontSize("3.5rem")
-            .fontHeight("4.2rem"));
+  protected List<Style> l() {
+    return List.of(
+        new TextSize("3.5rem"),
+        new TextHeight("4.2rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .fontSize("3rem")
-            .fontHeight("3.6rem"));
+  protected List<Style> m() {
+    return List.of(
+        new TextSize("3rem"),
+        new TextHeight("3.6rem")
+    );
   }
 
   @Override
-  protected State s() {
-    return new State()
-        .normal(new Style()
-            .fontSize("2.5rem")
-            .fontHeight("3rem"));
+  protected List<Style> s() {
+    return List.of(
+        new TextSize("2.5rem"),
+        new TextHeight("3rem")
+    );
   }
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .fontSize("2rem")
-            .fontHeight("2.4rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new TextSize("2rem"),
+        new TextHeight("2.4rem")
+    );
   }
 }

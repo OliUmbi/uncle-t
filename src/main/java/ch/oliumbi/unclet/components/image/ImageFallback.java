@@ -1,7 +1,10 @@
 package ch.oliumbi.unclet.components.image;
 
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Fit;
+import ch.oliumbi.compass.ui.style.Height;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.Width;
+import java.util.List;
 
 public class ImageFallback extends Image {
 
@@ -9,12 +12,13 @@ public class ImageFallback extends Image {
     super(url, description, width, height);
   }
 
+
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .width("100%")
-            .height("100%")
-            .fit("cover"));
+  protected List<Style> xl() {
+    return List.of(
+        new Width("100%"),
+        new Height("100%"),
+        new Fit("cover")
+    );
   }
 }

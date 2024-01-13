@@ -1,8 +1,10 @@
 package ch.oliumbi.unclet.components.article;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Margin;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.WidthMax;
 import ch.oliumbi.unclet.Global;
 import java.util.List;
 
@@ -25,39 +27,39 @@ public class Article extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .padding("6rem 5rem")
-            .widthMax(Global.m())
-            .margin("auto"));
+  protected List<Style> xl() {
+    return List.of(
+        new Margin("auto"),
+        new Padding("6rem 5rem"),
+        new WidthMax(Global.m())
+    );
   }
 
   @Override
-  protected State l() {
-    return new State()
-        .normal(new Style()
-            .padding("5rem 4rem"));
+  protected List<Style> l() {
+    return List.of(
+        new Padding("5rem 4rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .padding("4rem 3rem"));
+  protected List<Style> m() {
+    return List.of(
+        new Padding("4rem 3rem")
+    );
   }
 
   @Override
-  protected State s() {
-    return new State()
-        .normal(new Style()
-            .padding("3rem 2rem"));
+  protected List<Style> s() {
+    return List.of(
+        new Padding("3rem 2rem")
+    );
   }
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .padding("2rem 1rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new Padding("2rem 1rem")
+    );
   }
 }

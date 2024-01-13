@@ -1,11 +1,15 @@
 package ch.oliumbi.unclet.components.navigation;
 
 import ch.oliumbi.compass.ui.component.Component;
+import ch.oliumbi.compass.ui.script.Listener;
 import ch.oliumbi.compass.ui.script.Script;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Background;
+import ch.oliumbi.compass.ui.style.Border;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.Icons;
 import ch.oliumbi.unclet.Global;
+import ch.oliumbi.unclet.pages.legal.Element;
 import java.util.List;
 
 public class Control extends Component {
@@ -32,25 +36,41 @@ public class Control extends Component {
   }
 
   @Override
-  protected Script script() {
-    return new Script()
-        .click("""
+  protected List<Script> scripts() {
+    return List.of(
+        new Listener("click", """
             event("navigation")
-            """);
+            """)
+    );
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .padding("0.5rem")
-            .border("none")
-            .background(Global.white()))
-        .hover(new Style()
-            .background(Global.whiteDark()))
-        .focus(new Style()
-            .outline(Global.outline()))
-        .action(new Style()
-            .background(Global.primary()));
+  protected List<Style> xl() {
+    return List.of(
+        new Padding("0.5rem"),
+        new Border("none"),
+        new Background(Global.white())
+    );
+  }
+
+  @Override
+  protected List<Style> xlHover() {
+    return List.of(
+        new Background(Global.whiteDark())
+    );
+  }
+
+  @Override
+  protected List<Style> xlAction() {
+    return List.of(
+        new Background(Global.primary())
+    );
+  }
+
+  @Override
+  protected List<Style> xlFocus() {
+    return List.of(
+        Global.outline()
+    );
   }
 }

@@ -1,8 +1,11 @@
 package ch.oliumbi.unclet.pages.home;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Grid;
+import ch.oliumbi.compass.ui.style.Margin;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.compass.ui.style.WidthMax;
 import ch.oliumbi.unclet.Global;
 import ch.oliumbi.unclet.components.image.Image;
 import ch.oliumbi.unclet.components.typography.P;
@@ -24,43 +27,41 @@ public class Eyecatcher extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .widthMax(Global.xl())
-            .margin("auto")
-            .padding("6rem")
-            .grid("2fr 1fr", "auto", "start", "center", "2rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new WidthMax(Global.xl()),
+        new Margin("auto"),
+        new Padding("6rem"),
+        new Grid("2fr 1fr", "auto", "start", "center", "2rem")
+    );
   }
 
   @Override
-  protected State l() {
-    return new State()
-        .normal(new Style()
-            .padding("4rem"));
+  protected List<Style> l() {
+    return List.of(
+        new Padding("5rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .padding("4rem"));
+  protected List<Style> m() {
+    return List.of(
+        new Padding("4rem")
+    );
   }
 
   @Override
-  protected State s() {
-    return new State()
-        .normal(new Style()
-            .padding("3rem")
-            .grid("1fr", "auto", "center", "start", "1rem"));
+  protected List<Style> s() {
+    return List.of(
+        new Padding("3rem"),
+        new Grid("1fr", "auto", "center", "start", "1rem")
+    );
   }
-
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .padding("2rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new Padding("2rem")
+    );
   }
-
 }

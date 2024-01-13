@@ -1,7 +1,8 @@
 package ch.oliumbi.unclet.components.header;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Flex;
+import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.link.Link;
 import ch.oliumbi.unclet.components.navigation.Navigation;
@@ -23,38 +24,38 @@ public class Header extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .padding("5rem")
-            .flex("row", "nowrap", "space-between", "center", "0"));
+  protected List<Style> xl() {
+    return List.of(
+        new Padding("5rem"),
+        new Flex("row", "nowrap", "space-between", "center", "0")
+    );
   }
 
   @Override
-  protected State l() {
-    return new State()
-        .normal(new Style()
-            .padding("4rem"));
+  protected List<Style> l() {
+    return List.of(
+        new Padding("4rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .padding("3rem"));
+  protected List<Style> m() {
+    return List.of(
+        new Padding("3rem")
+    );
   }
 
   @Override
-  protected State s() {
-    return new State()
-        .normal(new Style()
-            .padding("2rem"));
+  protected List<Style> s() {
+    return List.of(
+        new Padding("2rem")
+    );
   }
 
   @Override
-  protected State xs() {
-    return new State()
-        .normal(new Style()
-            .padding("1rem"));
+  protected List<Style> xs() {
+    return List.of(
+        new Padding("1rem")
+    );
   }
 }

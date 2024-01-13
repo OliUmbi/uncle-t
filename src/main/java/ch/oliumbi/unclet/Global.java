@@ -1,5 +1,8 @@
 package ch.oliumbi.unclet;
 
+import ch.oliumbi.compass.ui.style.Outline;
+import ch.oliumbi.compass.ui.style.Style;
+
 public class Global {
 
   public static String whiteLight() {
@@ -50,12 +53,12 @@ public class Global {
     return "#BDAE0F";
   }
 
-  public static String outline() {
-    return STR."0.125rem solid \{black()}";
+  public static Style outline() {
+    return new Outline(STR."0.125rem solid \{black()}");
   }
 
-  public static String error() {
-    return STR."0.125rem solid \{accent()}";
+  public static Style error() {
+    return new Outline(STR."0.125rem solid \{accent()}");
   }
 
   public static String xl() {

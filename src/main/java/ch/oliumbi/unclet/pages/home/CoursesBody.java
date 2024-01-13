@@ -1,7 +1,7 @@
 package ch.oliumbi.unclet.pages.home;
 
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.State;
+import ch.oliumbi.compass.ui.style.Flex;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.unclet.components.button.Button;
 import ch.oliumbi.unclet.components.link.Link;
@@ -31,16 +31,16 @@ public class CoursesBody extends Component {
   }
 
   @Override
-  protected State xl() {
-    return new State()
-        .normal(new Style()
-            .flex("column", "nowrap", "flex-start", "flex-start", "2rem"));
+  protected List<Style> xl() {
+    return List.of(
+        new Flex("column", "nowrap", "flex-start", "flex-start", "2rem")
+    );
   }
 
   @Override
-  protected State m() {
-    return new State()
-        .normal(new Style()
-            .flex("column", "nowrap", "flex-start", "flex-start", "1rem"));
+  protected List<Style> m() {
+    return List.of(
+        new Flex("column", "nowrap", "flex-start", "flex-start", "1rem")
+    );
   }
 }
