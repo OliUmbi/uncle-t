@@ -5,6 +5,7 @@ import ch.oliumbi.compass.ui.style.TextColor;
 import ch.oliumbi.compass.ui.style.TextFamily;
 import ch.oliumbi.unclet.Global;
 import ch.oliumbi.unclet.components.typography.H3;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Number extends H3 {
@@ -15,7 +16,7 @@ public class Number extends H3 {
 
   @Override
   protected List<Style> xl() {
-    List<Style> styles = super.xl();
+    List<Style> styles = new ArrayList<>(super.xl());
 
     styles.add(new TextColor(Global.blackLight()));
 
