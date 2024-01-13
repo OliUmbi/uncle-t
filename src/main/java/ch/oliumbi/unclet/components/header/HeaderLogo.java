@@ -1,13 +1,12 @@
 package ch.oliumbi.unclet.components.header;
 
 import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.components.image.Img;
+import ch.oliumbi.unclet.components.image.Image;
 
-public class Logo extends Img {
+public class HeaderLogo extends Image {
 
-  public Logo() {
+  public HeaderLogo() {
     super("/static/svg/logo.svg", "Logo Uncle-T", 1483, 512);
   }
 

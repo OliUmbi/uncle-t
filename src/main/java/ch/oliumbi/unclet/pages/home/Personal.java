@@ -15,8 +15,8 @@ public class Personal extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new Background(),
-        new Overlay()
+        new PersonalBackground(),
+        new PersonalOverlay()
     );
   }
 
@@ -26,6 +26,6 @@ public class Personal extends Component {
         .normal(new Style()
             .position("relative")
             .width("100%")
-            .height("100dvh"));
+            .height("80rem"));
   }
 }

@@ -1,17 +1,20 @@
-package ch.oliumbi.unclet.components.image;
+package ch.oliumbi.unclet.components.picture;
 
 import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.unclet.Global;
 import java.util.List;
+import lombok.Getter;
 
-public class Source extends Component {
+public class PictureSource extends Component {
 
+  @Getter
   private final String path;
+  @Getter
   private final MimeType type;
 
-  public Source(String path, MimeType type) {
+  public PictureSource(String path, MimeType type) {
     this.path = path;
     this.type = type;
   }

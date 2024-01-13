@@ -1,12 +1,11 @@
 package ch.oliumbi.unclet.components.image;
 
 import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
 
-public class Fallback extends Img {
+public class ImageFallback extends Image {
 
-  public Fallback(String url, String description, Integer width, Integer height) {
+  public ImageFallback(String url, String description, Integer width, Integer height) {
     super(url, description, width, height);
   }
 

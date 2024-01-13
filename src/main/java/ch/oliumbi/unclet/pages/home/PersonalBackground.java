@@ -1,18 +1,16 @@
 package ch.oliumbi.unclet.pages.home;
 
 import ch.oliumbi.compass.core.enums.MimeType;
-import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.image.Image;
 import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
-import ch.oliumbi.unclet.components.image.Picture;
-import java.util.List;
+import ch.oliumbi.unclet.components.picture.Picture;
+import ch.oliumbi.unclet.components.picture.PictureSource;
 
-public class Background extends Picture {
+public class PersonalBackground extends Picture {
 
-  public Background() {
-    super(new Image("/static/jpg/ikzy", MimeType.JPEG, "Home", 1600, 1600));
+  public PersonalBackground() {
+    super("Home", 1600, 1600, new PictureSource("/static/jpg/ikzy", MimeType.JPEG));
   }
 
   @Override

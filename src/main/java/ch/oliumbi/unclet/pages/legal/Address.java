@@ -19,7 +19,8 @@ public class Address extends Component {
   protected List<Component> components() {
     return List.of(
         new P("Verantwortlich für den Inhalt der Seiten"),
-        new P("Uncle-T GmbH, Thomas Habegger"),
+        new P("Uncle-T GmbH"),
+        new P("Thomas Habegger"),
         new P("Zelgliweg 2"),
         new P("5506 Mägenwil"),
         new EMail("info@uncle-t.ch")

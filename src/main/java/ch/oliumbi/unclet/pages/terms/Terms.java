@@ -61,7 +61,7 @@ public class Terms extends UncleT {
 
   @Override
   public String path() {
-    return "/allgemeine-geschäftsbedingung";
+    return "/geschaeftsbedingung";
   }
 
   @Override

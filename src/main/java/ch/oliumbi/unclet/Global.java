@@ -54,6 +54,10 @@ public class Global {
     return STR."0.125rem solid \{black()}";
   }
 
+  public static String error() {
+    return STR."0.125rem solid \{accent()}";
+  }
+
   public static String xl() {
     return "100rem";
   }

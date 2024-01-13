@@ -4,14 +4,14 @@ import ch.oliumbi.compass.ui.attribute.Attribute;
 import ch.oliumbi.compass.ui.component.Component;
 import java.util.List;
 
-public class Img extends Component {
+public class Image extends Component {
 
   private final String url;
   private final String description;
   private final Integer width;
   private final Integer height;
 
-  public Img(String url, String description, Integer width, Integer height) {
+  public Image(String url, String description, Integer width, Integer height) {
     this.url = url;
     this.description = description;
     this.width = width;

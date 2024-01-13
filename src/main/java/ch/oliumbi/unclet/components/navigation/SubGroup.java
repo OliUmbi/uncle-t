@@ -17,7 +17,7 @@ public class SubGroup extends Component {
   protected List<Component> components() {
     return List.of(
         new SubLink("Kontakt", "/kontakt"),
-        new SubLink("Geschäftsbedingung", "/allgemeine-geschäftsbedingung"),
+        new SubLink("Geschäftsbedingung", "/geschaeftsbedingung"),
         new SubLink("Datenschutz", "/datenschutz"),
         new SubLink("Impressum", "/impressum")
     );

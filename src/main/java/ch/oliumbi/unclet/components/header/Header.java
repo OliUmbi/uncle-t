@@ -2,8 +2,8 @@ package ch.oliumbi.unclet.components.header;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.State;
-import ch.oliumbi.compass.ui.style.State;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.unclet.components.link.Link;
 import ch.oliumbi.unclet.components.navigation.Navigation;
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class Header extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new Logo(),
+        new Link("/", false, new HeaderLogo()),
         new Navigation()
     );
   }

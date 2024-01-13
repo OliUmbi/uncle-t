@@ -11,6 +11,7 @@ import ch.oliumbi.compass.server.route.Route;
 import ch.oliumbi.compass.ui.Ui;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.font.Font;
+import ch.oliumbi.unclet.components.footer.Footer;
 import ch.oliumbi.unclet.components.header.Header;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,7 @@ public abstract class UncleT extends Ui implements Route {
     List<Component> components = new ArrayList<>();
     components.add(new Header());
     components.addAll(load(request));
+    components.add(new Footer());
 
     String render = render(components);
 
