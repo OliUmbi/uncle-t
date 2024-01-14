@@ -16,7 +16,6 @@ import ch.oliumbi.unclet.components.header.Header;
 import java.util.ArrayList;
 import java.util.List;
 
-@Autoload
 public abstract class UncleT extends Ui implements Route {
 
   protected abstract List<Component> load(Request request);
