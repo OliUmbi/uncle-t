@@ -1,9 +1,11 @@
 package ch.oliumbi.unclet.pages.home;
 
+import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.ui.component.Component;
-import ch.oliumbi.compass.ui.style.Flex;
 import ch.oliumbi.compass.ui.style.Grid;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.unclet.components.picture.PictureSource;
+import ch.oliumbi.unclet.components.picture.PictureStyled;
 import java.util.List;
 
 public class Courses extends Component {
@@ -18,7 +20,7 @@ public class Courses extends Component {
   protected List<Component> components() {
     return List.of(
         new CoursesBody(),
-    new CoursesPicture()
+        new PictureStyled("Kurse", 1600, 1600, new PictureSource("/static/jpg/msdv", MimeType.JPEG))
     );
   }
 

@@ -15,7 +15,8 @@ public class Contact extends UncleT {
   protected List<Component> load(Request request) {
     return List.of(
         new Section(
-            new H1("Kontakt")
+            new H1("Kontakt"),
+            new ch.oliumbi.unclet.components.contact.Contact()
         )
     );
   }

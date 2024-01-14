@@ -9,14 +9,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <compass.version>1.0</compass.version>
+        <compass.version>1.0.0</compass.version>
     </properties>
 
     <name>Uncle-T</name>
     <description>Uncle-T</description>
     <groupId>ch.oliumbi</groupId>
     <artifactId>unclet</artifactId>
-    <version>1.0</version>
+    <version>developement</version>
+
+    <repositories>
+        <repository>
+            <id>compass</id>
+            <name>compass</name>
+            <url>https://maven.pkg.github.com/OliUmbi/compass</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -49,6 +57,31 @@
                     <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
-        </plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>ch.oliumbi.unclet.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>sudo
     </build>
 </project>

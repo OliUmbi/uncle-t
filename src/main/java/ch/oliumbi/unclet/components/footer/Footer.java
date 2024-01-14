@@ -7,8 +7,6 @@ import ch.oliumbi.compass.ui.style.Padding;
 import ch.oliumbi.compass.ui.style.Style;
 import ch.oliumbi.compass.ui.style.WidthMax;
 import ch.oliumbi.unclet.Global;
-import ch.oliumbi.unclet.components.image.Image;
-import ch.oliumbi.unclet.components.typography.P;
 import java.util.List;
 
 public class Footer extends Component {
@@ -21,17 +19,11 @@ public class Footer extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new Image("/static/svg/icon.svg", "Uncle-T icon", 448, 448),
-        new FooterGroup("Bedingungen",
-            new FooterLink("Kontakt", "/kontakt"),
-            new FooterLink("Geschäftsbedingungen", "/geschaeftsbedingung"),
-            new FooterLink("Datenschutz", "/datenschutz"),
-            new FooterLink("Impressum", "/impressum")),
-        new FooterGroup("Addresse",
-            new P("Uncle-T GmbH"),
-            new P("Thomas Habegger"),
-            new P("Zelgliweg 2"),
-            new P("5506 Mägenwil"))
+        new FooterLink("Impressum", "/impressum"),
+        new FooterLink("Datenschutz", "/datenschutz"),
+        new FooterIcon(),
+        new FooterLink("Kontakt", "/kontakt"),
+        new FooterLink("Geschäftsbedingungen", "/geschaeftsbedingung")
     );
   }
 
@@ -41,7 +33,36 @@ public class Footer extends Component {
         new WidthMax(Global.xl()),
         new Margin("auto"),
         new Padding("6rem"),
-        new Grid("1fr 1fr 1fr 1fr", "auto", "start", "start", "2rem")
+        new Grid("2fr 2fr 1fr 2fr 2fr", "auto", "center", "center", "2rem")
+    );
+  }
+
+  @Override
+  protected List<Style> l() {
+    return List.of(
+        new Padding("5rem")
+    );
+  }
+
+  @Override
+  protected List<Style> m() {
+    return List.of(
+        new Padding("4rem"),
+        new Grid("1fr", "auto", "center", "center", "1rem")
+    );
+  }
+
+  @Override
+  protected List<Style> s() {
+    return List.of(
+        new Padding("3rem")
+    );
+  }
+
+  @Override
+  protected List<Style> xs() {
+    return List.of(
+        new Padding("2rem")
     );
   }
 }

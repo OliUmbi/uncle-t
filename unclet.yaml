@@ -1,0 +1,14 @@
+services:
+  unclet-server:
+    image: unclet
+    restart: always
+    ports:
+      - 10000:8080
+    networks:
+      - unclet-network
+
+networks:
+  unclet-network:
+
+volumes:
+  unclet-volume:

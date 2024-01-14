@@ -6,6 +6,8 @@ import ch.oliumbi.compass.ui.image.Image;
 import ch.oliumbi.compass.ui.style.Flex;
 import ch.oliumbi.compass.ui.style.Grid;
 import ch.oliumbi.compass.ui.style.Style;
+import ch.oliumbi.unclet.components.picture.PictureSource;
+import ch.oliumbi.unclet.components.picture.PictureStyled;
 import java.util.List;
 
 public class Catering extends Component {
@@ -18,7 +20,7 @@ public class Catering extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new CateringPicture(),
+        new PictureStyled("Catering", 1600, 1600, new PictureSource("/static/jpg/dsgf", MimeType.JPEG)),
         new CateringBody()
     );
   }
