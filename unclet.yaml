@@ -1,6 +1,6 @@
 services:
   unclet-server:
-    image: unclet
+    image: ghcr.io/oliumbi/uncle-t:latest
     restart: always
     ports:
       - 10000:8080

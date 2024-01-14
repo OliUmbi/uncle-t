@@ -82,6 +82,6 @@
                     </archive>
                 </configuration>
             </plugin>
-        </plugins>sudo
+        </plugins>
     </build>
 </project>
