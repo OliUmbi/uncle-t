@@ -22,7 +22,7 @@ public class Eyecatcher extends Component {
   protected List<Component> components() {
     return List.of(
         new Image("/static/svg/logo.svg", "Logo Uncle-T", 1483, 512),
-        new P("Mein Name ist Thomas Habegger und ich arbeite seit 13 Jahren leidenschaftlich gerne als Koch. Die Kunden und deren Gäste mit meinen Kochkünsten zu verzaubern bereitet mir grosse Freude. ")
+        new EyecatcherGroup()
     );
   }
 
@@ -32,7 +32,7 @@ public class Eyecatcher extends Component {
         new WidthMax(Global.xl()),
         new Margin("auto"),
         new Padding("6rem"),
-        new Grid("2fr 1fr", "auto", "start", "center", "2rem")
+        new Grid("3fr 2fr", "auto", "start", "center", "2rem")
     );
   }
 

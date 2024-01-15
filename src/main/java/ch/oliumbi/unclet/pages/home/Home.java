@@ -5,6 +5,7 @@ import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.server.request.Request;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.unclet.UncleT;
+import ch.oliumbi.unclet.components.article.Article;
 import ch.oliumbi.unclet.components.button.Button;
 import ch.oliumbi.unclet.components.contact.Contact;
 import ch.oliumbi.unclet.components.picture.PictureSource;
@@ -33,7 +34,7 @@ public class Home extends UncleT {
         new Section(
             new Courses()
         ),
-        new Section(
+        new Article(
             new Contact()
         )
     );

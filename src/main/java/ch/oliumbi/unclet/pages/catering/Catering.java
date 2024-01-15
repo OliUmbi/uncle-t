@@ -5,6 +5,7 @@ import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.server.request.Request;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.unclet.UncleT;
+import ch.oliumbi.unclet.components.article.Article;
 import ch.oliumbi.unclet.components.contact.Contact;
 import ch.oliumbi.unclet.components.picture.PictureSource;
 import ch.oliumbi.unclet.components.picture.PictureStyled;
@@ -41,11 +42,11 @@ public class Catering extends UncleT {
                     new P(
                         "Erstklassigen Service und einen reibungslosen Ablauf ihrer Veranstaltung gehören für mich zur Selbstverständlichkeit. Ebenso lege ich grossen Wert auf die Qualität und Frische der Zutaten, die ich für ihre Gerichte verwende. Eine enge Zusammenarbeit mit meinen lokalen Lieferanten ist dabei Standard."),
                     new P(
-                        "Individuell, professionell, regional, lokal  und hochwertig – dies zeichnet mein Catering-Service aus – überzeugen sie sich selbst und buchen sie ein unvergessliches kulinarisches Erlebnis.")
+                        "Individuell, professionell, regional, lokal  und hochwertig – dies zeichnet mein Catering-Service aus – überzeugen Sie sich selbst und buchen Sie ein unvergessliches kulinarisches Erlebnis.")
                 )
             )
         ),
-        new Section(
+        new Article(
             new Contact()
         )
     );

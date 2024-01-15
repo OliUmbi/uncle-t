@@ -49,10 +49,6 @@ public class Terms extends UncleT {
                 "Nach Durchführung des Anlasses erhält der Kunde vom Caterer eine Rechnung, die innerhalb 14 Tagen ab Rechnungsdatum zu begleichen ist."
             ),
             new Term("9",
-                "Die offerierten Preise sind exkl. Mehrwertsteuer. Die Mehrwertsteuer wird bei der Endabrechnung zugerechnet. "
-                // todo good to keep in mind
-            ),
-            new Term("10",
                 "Die Vereinbarung untersteht schweizerischem Recht. Gerichtsstand für sämtliche Streitigkeiten, welche sich im Zusammenhang mit der Vereinbarung und der Tätigkeit des Caterers ergeben, ist Aargau (Handelsgericht)"
             )
         )

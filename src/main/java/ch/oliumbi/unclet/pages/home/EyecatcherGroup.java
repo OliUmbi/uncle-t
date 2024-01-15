@@ -1,4 +1,4 @@
-package ch.oliumbi.unclet.components.contact;
+package ch.oliumbi.unclet.pages.home;
 
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.compass.ui.style.Flex;
@@ -7,7 +7,7 @@ import ch.oliumbi.unclet.components.typography.H4;
 import ch.oliumbi.unclet.components.typography.P;
 import java.util.List;
 
-public class ContactAddress extends Component {
+public class EyecatcherGroup extends Component {
 
   @Override
   protected String tag() {
@@ -17,18 +17,15 @@ public class ContactAddress extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new H4("Adresse"),
-        new P("Uncle-T GmbH"),
-        new P("Thomas Habegger"),
-        new P("Zelgliweg 2"),
-        new P("5506 Mägenwil")
+        new H4("Herzlich Willkommen"),
+        new P("Mein Name ist Thomas und ich freue mich, dass du den Weg zu meiner Seite gefunden hast. Lass mich einen kurzen Blick in meine kulinarische Reise mit dir teilen. ")
     );
   }
 
   @Override
   protected List<Style> xl() {
     return List.of(
-        new Flex("column", "nowrap", "flex-start", "flex-start", "0.5rem")
+        new Flex("column", "nowrap", "flex-start", "flex-start", "1rem")
     );
   }
 }

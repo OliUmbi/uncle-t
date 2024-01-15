@@ -5,6 +5,7 @@ import ch.oliumbi.compass.core.enums.MimeType;
 import ch.oliumbi.compass.server.request.Request;
 import ch.oliumbi.compass.ui.component.Component;
 import ch.oliumbi.unclet.UncleT;
+import ch.oliumbi.unclet.components.article.Article;
 import ch.oliumbi.unclet.components.contact.Contact;
 import ch.oliumbi.unclet.components.picture.PictureSource;
 import ch.oliumbi.unclet.components.picture.PictureStyled;
@@ -30,7 +31,7 @@ public class Courses extends UncleT {
                     new P("Wir freuen uns, Sie in die faszinierende Welt der kulinarischen Künste einzuführen und Ihre Leidenschaft fürs Kochen und Grillen zu entfachen."),
                     new P("Unsere Kurse bieten eine einmalige Gelegenheit, Ihr gastronomisches Wissen zu erweitern und Ihre Fertigkeiten auf ein neues Level zu bringen.")
                     ),
-                new P("Unsere hochqualifizierten und erfahrenen Koch- und Grillmeister stehen Ihnen zur Seite, um sie in die Geheimnisse der Aromen und Techniken einzuführen. Ganz gleich, ob Sie ein Neuling in der Küche sind oder bereits über Erfahrung verfügen, unsere Kurse sind auf jeden Teilnehmer individuell zugeschnitten.")
+                new P("Unsere hochqualifizierten und erfahrenen Koch- und Grillmeister stehen Ihnen zur Seite, um Sie in die Geheimnisse der Aromen und Techniken einzuführen. Ganz gleich, ob Sie ein Neuling in der Küche sind oder bereits über Erfahrung verfügen, unsere Kurse sind auf jeden Teilnehmer individuell zugeschnitten.")
             )
         ),
         new Section(
@@ -42,7 +43,7 @@ public class Courses extends UncleT {
                 )
             )
         ),
-        new Section(
+        new Article(
             new CoursesGroup(
                 new H4("Grillkurs"),
                 new P("Wenn Sie sich für unseren Grillkurs entscheiden, erwartet Sie ein Grillabenteuer der besonderen Art. Lernen Sie, wie Sie saftige Steaks, zartes Grillgemüse und unwiderstehliche Grilldelikatessen zaubern."),
@@ -50,7 +51,7 @@ public class Courses extends UncleT {
                 new P("Unsere Koch- und Grillkurse sind nicht nur lehrreich, sondern auch unterhaltsam. Sie haben die Möglichkeit, sich mit Gleichgesinnten auszutauschen, neue Freundschaften zu knüpfen und gemeinsam kulinarische Höhepunkte zu erleben.")
             )
         ),
-        new Section(
+        new Article(
             new Contact()
         )
     );

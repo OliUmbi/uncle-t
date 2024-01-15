@@ -50,7 +50,7 @@ public class Privacy extends UncleT {
             ),
             new Policy(
                 "Google Maps",
-                "Diese Webseite verwendet unter Umständen das Produkt Google Maps von Google Inc. Durch Nutzung dieser Webseite erklären Sie sich mit der Erfassung, Bearbeitung sowie Nutzung der automatisiert erhobenen Daten durch Google Inc, deren Vertreter sowie Dritter einverstanden. Die Nutzungsbedingungen von Google Maps finden sie unter «Nutzungsbedingungen von Google Maps»."
+                "Diese Webseite verwendet unter Umständen das Produkt Google Maps von Google Inc. Durch Nutzung dieser Webseite erklären Sie sich mit der Erfassung, Bearbeitung sowie Nutzung der automatisiert erhobenen Daten durch Google Inc, deren Vertreter sowie Dritter einverstanden. Die Nutzungsbedingungen von Google Maps finden Sie unter «Nutzungsbedingungen von Google Maps»."
             ),
             new Policy(
                 "Kontaktformular",
