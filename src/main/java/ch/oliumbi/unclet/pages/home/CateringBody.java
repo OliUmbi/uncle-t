@@ -20,8 +20,6 @@ public class CateringBody extends Component {
   protected List<Component> components() {
     return List.of(
         new H2("Catering"),
-        new P(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia lectus quis porttitor auctor. Praesent sed mollis nibh. Ut sit amet suscipit nisi. Aliquam varius aliquam massa. Duis ultricies consequat ullamcorper. Nunc risus massa, tempor sed metus et, lacinia ornare turpis. Morbi imperdiet semper nibh sit amet aliquet. Ut in nulla non mauris facilisis efficitur. Vestibulum sed pulvinar ipsum."),
         new Link(
             "/catering",
             false,
