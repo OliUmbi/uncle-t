@@ -20,7 +20,7 @@ public class CateringBody extends Component {
   protected List<Component> components() {
     return List.of(
         new H2("Catering"),
-        new P("Chick, wenn das Essen nachhause oder in die Firma geliefert wird. Brauchen auch Sie ein auf Sie zugeschnittenes Catering Angebot."),
+        new P("Chic, wenn das Essen nachhause oder in die Firma geliefert wird. Brauchen auch Sie ein auf Sie zugeschnittenes Catering Angebot."),
         new P("Wie zum Beispiel: Firmenanlässe, Hochzeiten, Geburtstage, Apéros und vieles mehr. "),
         new Link(
             "/catering",
