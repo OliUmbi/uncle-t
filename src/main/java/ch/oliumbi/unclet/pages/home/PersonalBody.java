@@ -30,6 +30,7 @@ public class PersonalBody extends Component {
   protected List<Component> components() {
     return List.of(
         new H2("Privatkoch"),
+        new P("Ein erfahrener Privatkoch, der kulinarische Meisterwerke kreiert, steht bereit, um Ihre Geschmackssinne zu verwöhnen. Lassen Sie sich von exquisiten Aromen und massgeschneiderten Menüs in Ihrem Zuhause verführen."),
         new Link(
             "/privatkoch",
             false,

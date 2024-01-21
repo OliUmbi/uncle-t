@@ -19,7 +19,7 @@ public class Contact extends Component {
   @Override
   protected List<Component> components() {
     return List.of(
-        new P("Wenn Sie eine Frage haben oder einen Termin vereinbaren möchten, kontaktieren Sie uns einfach."),
+        new P("Wenn Sie eine Frage haben oder einen Termin vereinbaren möchten, kontaktieren Sie mich einfach."),
         new Split(
             new ContactEmail(),
             new ContactAddress()

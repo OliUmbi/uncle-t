@@ -28,9 +28,9 @@ public class Catering extends UncleT {
             new Split(
                 new CateringGroup(
                     new P(
-                        "Als Catering-Anbieter habe ich eine grosse Leidenschaft für hochwertiges Essen und erstklassigen Service. Durch meine langjährige Erfahrung als Koch in einem Catering Unternehmen, habe ich ein breites Repertoire an kulinarischen Fähigkeiten und Kenntnissen entwickelt."),
+                        "Als Catering-Anbieter habe ich eine grosse Leidenschaft für hochwertiges Essen und erstklassigen Service. Durch meine langjährige Erfahrung als Koch in einem Catering-Unternehmen habe ich ein breites Repertoire an kulinarischen Fähigkeiten und Kenntnissen entwickelt."),
                     new P(
-                        "Eine genau Absprache und enge Zusammenarbeit im Vorfeld ihres Anlasses ermöglicht es mir auf ihre individuellen Wünsche und Bedürfnisse einzugehen. Dabei erstelle ich massgeschneiderte Menüs, die auf ihre Anforderungen zugeschnitten sind.")
+                        "Eine genaue Absprache und enge Zusammenarbeit im Vorfeld ihres Anlasses ermöglichen es mir, auf ihre individuellen Wünsche und Bedürfnisse einzugehen. Dabei erstelle ich massgeschneiderte Menüs, die auf ihre Anforderungen zugeschnitten sind.")
                 ),
                 new PictureStyled("Cateringservice", 1600, 1600, new PictureSource("/static/jpg/qwfg", MimeType.JPEG))
             )

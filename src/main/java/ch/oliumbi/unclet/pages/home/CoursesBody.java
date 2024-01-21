@@ -20,6 +20,7 @@ public class CoursesBody extends Component {
   protected List<Component> components() {
     return List.of(
         new H2("Kurse"),
+        new P("Erleben Sie eine unterhaltsame und lehrreiche Atmosphäre, die Ihre Kochfähigkeiten auf ein neues Niveau hebt und Ihr Vertrauen in die Küche stärkt. Buchen Sie noch heute einen Kochkurs für sich und Ihre Freunde, und erleben Sie gemeinsam einen unvergesslichen Abend voller kulinarischer Entdeckungen und genussvoller Momente."),
         new Link(
             "/kurse",
             false,
